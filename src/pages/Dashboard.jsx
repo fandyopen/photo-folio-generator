@@ -1,6 +1,9 @@
 
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { Card, CardContent } from "@/components/ui/card";
+import { Breadcrumb, BreadcrumbList, BreadcrumbItem, BreadcrumbLink, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
+import { Home } from 'lucide-react';
 import Layout from '../components/layout/Layout';
 import DashboardHeader from '../components/dashboard/DashboardHeader';
 import FilterPanel from '../components/dashboard/FilterPanel';
@@ -17,6 +20,23 @@ const Dashboard = () => {
   return (
     <Layout>
       <div className="p-6">
+        <Breadcrumb className="mb-4">
+          <BreadcrumbList>
+            <BreadcrumbItem>
+              <BreadcrumbLink as={Link} to="/">
+                <Home className="h-4 w-4 mr-1" />
+                首页
+              </BreadcrumbLink>
+            </BreadcrumbItem>
+            <BreadcrumbSeparator />
+            <BreadcrumbItem>
+              <BreadcrumbLink as={Link} to="/dashboard">
+                抢单看板
+              </BreadcrumbLink>
+            </BreadcrumbItem>
+          </BreadcrumbList>
+        </Breadcrumb>
+
         <DashboardHeader />
 
         <Card className="mb-6">
