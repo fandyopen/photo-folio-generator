@@ -12,26 +12,26 @@ const Sidebar = ({ collapsed = false, onToggle }) => {
   
   return (
     <div className={cn(
-      "h-screen bg-sidebar fixed left-0 top-0 z-40 flex flex-col transition-all duration-300",
+      "h-screen bg-white fixed left-0 top-0 z-40 flex flex-col transition-all duration-300 border-r",
       collapsed ? "w-[60px]" : "w-[200px]"
     )}>
-      <div className="flex items-center h-16 border-b border-sidebar-border px-4">
+      <div className="flex items-center h-16 border-b px-4">
         {!collapsed && (
-          <div className="text-white font-bold flex items-center">
-            <div className="w-8 h-8 rounded-full bg-brand-red flex items-center justify-center mr-2">
+          <div className="font-bold flex items-center">
+            <div className="w-8 h-8 rounded-full bg-blue-500 flex items-center justify-center mr-2">
               <span className="text-white text-sm">R</span>
             </div>
-            <span className="animate-fade-in">推荐直文档系统</span>
+            <span>推荐直文档系统</span>
           </div>
         )}
         {collapsed && (
-          <div className="w-8 h-8 rounded-full bg-brand-red flex items-center justify-center mx-auto">
+          <div className="w-8 h-8 rounded-full bg-blue-500 flex items-center justify-center mx-auto">
             <span className="text-white text-sm">R</span>
           </div>
         )}
         <button 
           onClick={onToggle}
-          className="ml-auto text-white p-1 hover:bg-sidebar-accent rounded-md"
+          className="ml-auto p-1 hover:bg-gray-100 rounded-md"
         >
           <Menu size={18} />
         </button>
@@ -121,13 +121,13 @@ const SidebarItem = ({
       className={cn(
         "flex items-center py-2 px-3 text-sm rounded-md transition-all duration-200",
         active 
-          ? "bg-sidebar-primary text-sidebar-primary-foreground" 
-          : "text-sidebar-foreground hover:bg-sidebar-accent",
+          ? "bg-blue-50 text-blue-500" 
+          : "text-gray-600 hover:bg-gray-100",
         collapsed ? "justify-center" : ""
       )}
     >
-      <span className={cn("flex-shrink-0", active ? "text-white" : "")}>{icon}</span>
-      {!collapsed && <span className={cn("ml-3 animate-fade-in", active ? "font-medium" : "")}>{label}</span>}
+      <span className={cn("flex-shrink-0", active ? "text-blue-500" : "")}>{icon}</span>
+      {!collapsed && <span className={cn("ml-3", active ? "font-medium" : "")}>{label}</span>}
     </Link>
   );
 };
