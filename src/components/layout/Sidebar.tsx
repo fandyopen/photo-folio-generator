@@ -2,7 +2,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { 
-  BarChart, Users, Target, User, Briefcase, FileText, Settings, Menu
+  BarChart, Users, Target, User, Briefcase, FileText, Settings, Menu, Image,
+  MapPin, Database, Book
 } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
@@ -46,12 +47,17 @@ const Sidebar: React.FC<SidebarProps> = ({ collapsed = false, onToggle }) => {
             label="排行榜" 
             to="/" 
             collapsed={collapsed} 
-            active
           />
           <SidebarItem 
             icon={<Target size={18} />} 
             label="抢单看板" 
             to="/dashboard" 
+            collapsed={collapsed} 
+          />
+          <SidebarItem 
+            icon={<Image size={18} />} 
+            label="图片上传" 
+            to="/image-upload" 
             collapsed={collapsed} 
           />
           <SidebarItem 
@@ -61,7 +67,7 @@ const Sidebar: React.FC<SidebarProps> = ({ collapsed = false, onToggle }) => {
             collapsed={collapsed} 
           />
           <SidebarItem 
-            icon={<Briefcase size={18} />} 
+            icon={<MapPin size={18} />} 
             label="我的位置" 
             to="/my-position" 
             collapsed={collapsed} 
@@ -73,7 +79,7 @@ const Sidebar: React.FC<SidebarProps> = ({ collapsed = false, onToggle }) => {
             collapsed={collapsed} 
           />
           <SidebarItem 
-            icon={<Briefcase size={18} />} 
+            icon={<Book size={18} />} 
             label="简历库" 
             to="/resumes" 
             collapsed={collapsed} 
@@ -85,7 +91,7 @@ const Sidebar: React.FC<SidebarProps> = ({ collapsed = false, onToggle }) => {
             collapsed={collapsed} 
           />
           <SidebarItem 
-            icon={<Settings size={18} />} 
+            icon={<Database size={18} />} 
             label="数据管理" 
             to="/data" 
             collapsed={collapsed} 
