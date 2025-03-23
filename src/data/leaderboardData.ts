@@ -43,7 +43,7 @@ export const offerData: LeaderboardEntry[] = [
 export const promotionBanners: Banner[] = [
   {
     id: 1,
-    imageUrl: "/lovable-uploads/f6a030bc-b722-408b-a321-9691ff13de3f.png",
+    imageUrl: "/lovable-uploads/f6345838-d45a-4760-bcba-b93cef629843.png",
     title: "开门红奖励",
   },
   {
