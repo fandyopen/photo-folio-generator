@@ -53,6 +53,7 @@ const Sidebar = ({ collapsed = false, onToggle }) => {
             label="抢单看板" 
             to="/dashboard" 
             collapsed={collapsed} 
+            active
           />
           <SidebarItem 
             icon={<FileText size={18} />} 
