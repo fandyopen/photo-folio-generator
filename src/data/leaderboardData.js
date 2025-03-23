@@ -1,51 +1,57 @@
 
 export const hiringData = [
-  { rank: 1, name: "李明", value: 32, isTop: true },
-  { rank: 2, name: "王芳", value: 28, isTop: true },
-  { rank: 3, name: "张伟", value: 25, isTop: true },
-  { rank: 4, name: "刘洋", value: 20 },
-  { rank: 5, name: "陈晓", value: 18 },
-  { rank: 6, name: "赵静", value: 15 },
-  { rank: 7, name: "杨帆", value: 12 },
-  { rank: 8, name: "孙宇", value: 10 },
+  { rank: 1, name: "陈**", value: 24, isTop: true },
+  { rank: 2, name: "王**", value: 19, isTop: true },
+  { rank: 3, name: "刘**", value: 18, isTop: true },
+  { rank: 4, name: "刘**", value: 18 },
+  { rank: 5, name: "洪**", value: 14 },
+  { rank: 6, name: "陈**", value: 13 },
+  { rank: 7, name: "袁**", value: 11 },
+  { rank: 8, name: "程**", value: 11 },
+  { rank: 9, name: "葛**", value: 11 },
+  { rank: 10, name: "段**", value: 10 },
 ];
 
 export const interviewData = [
-  { rank: 1, name: "王芳", value: 45, isTop: true },
-  { rank: 2, name: "张伟", value: 40, isTop: true },
-  { rank: 3, name: "李明", value: 38, isTop: true },
-  { rank: 4, name: "刘洋", value: 32 },
-  { rank: 5, name: "陈晓", value: 30 },
-  { rank: 6, name: "杨帆", value: 28 },
-  { rank: 7, name: "赵静", value: 25 },
-  { rank: 8, name: "孙宇", value: 20 },
+  { rank: 1, name: "陈**", value: 382, isTop: true },
+  { rank: 2, name: "蒋**", value: 333, isTop: true },
+  { rank: 3, name: "杨**", value: 305, isTop: true },
+  { rank: 4, name: "马**", value: 251 },
+  { rank: 5, name: "张**", value: 249 },
+  { rank: 6, name: "朱**", value: 249 },
+  { rank: 7, name: "段**", value: 245 },
+  { rank: 8, name: "程**", value: 245 },
+  { rank: 9, name: "周**", value: 241 },
+  { rank: 10, name: "周**", value: 212 },
 ];
 
 export const offerData = [
-  { rank: 1, name: "张伟", value: 25, isTop: true },
-  { rank: 2, name: "李明", value: 22, isTop: true },
-  { rank: 3, name: "王芳", value: 20, isTop: true },
-  { rank: 4, name: "杨帆", value: 16 },
-  { rank: 5, name: "刘洋", value: 15 },
-  { rank: 6, name: "陈晓", value: 12 },
-  { rank: 7, name: "赵静", value: 10 },
-  { rank: 8, name: "孙宇", value: 8 },
+  { rank: 1, name: "陈**", value: 49, isTop: true },
+  { rank: 2, name: "蒋**", value: 45, isTop: true },
+  { rank: 3, name: "张**", value: 31, isTop: true },
+  { rank: 4, name: "王**", value: 30 },
+  { rank: 5, name: "刘**", value: 25 },
+  { rank: 6, name: "葛**", value: 24 },
+  { rank: 7, name: "洪**", value: 22 },
+  { rank: 8, name: "刘**", value: 17 },
+  { rank: 9, name: "夏**", value: 17 },
+  { rank: 10, name: "肖**", value: 17 },
 ];
 
 export const promotionBanners = [
   {
     id: 1,
-    imageUrl: "/lovable-uploads/c0006672-e7a1-4157-850f-411a090706a3.png",
-    title: "招聘直播课程"
+    imageUrl: "/lovable-uploads/f6a030bc-b722-408b-a321-9691ff13de3f.png",
+    title: "开门红奖励",
   },
   {
     id: 2,
-    imageUrl: "/lovable-uploads/c0006672-e7a1-4157-850f-411a090706a3.png",
-    title: "简历优化技巧"
+    imageUrl: "/lovable-uploads/f6a030bc-b722-408b-a321-9691ff13de3f.png",
+    title: "推荐直播报告",
   },
   {
     id: 3,
-    imageUrl: "/lovable-uploads/c0006672-e7a1-4157-850f-411a090706a3.png",
-    title: "求职面试策略"
-  }
+    imageUrl: "/lovable-uploads/f6a030bc-b722-408b-a321-9691ff13de3f.png",
+    title: "简历优化技巧",
+  },
 ];

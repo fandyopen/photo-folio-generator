@@ -1,7 +1,13 @@
 
 import React, { useState } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
-import { cn } from '@/lib/utils';
+import { 
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselPrevious,
+  CarouselNext,
+} from "@/components/ui/carousel";
 
 interface PromotionBannerProps {
   banners: {
@@ -23,17 +29,17 @@ const PromotionBanner: React.FC<PromotionBannerProps> = ({ banners }) => {
   };
   
   return (
-    <div className="bg-white rounded-lg shadow-md card-shadow relative animate-fade-up">
+    <div className="bg-white rounded-lg shadow-md h-full">
       <div className="p-4 border-b border-gray-100">
         <h3 className="font-medium text-gray-800">推荐直播报</h3>
       </div>
       
-      <div className="px-4 py-6 relative overflow-hidden">
-        <div className="flex justify-center items-center h-72">
+      <div className="p-4 relative overflow-hidden flex flex-col flex-1">
+        <div className="flex-1">
           <img 
-            src="/lovable-uploads/c0006672-e7a1-4157-850f-411a090706a3.png"
+            src="/lovable-uploads/f6a030bc-b722-408b-a321-9691ff13de3f.png" 
             alt="Promotion Banner" 
-            className="max-h-full object-contain"
+            className="w-full object-contain"
           />
         </div>
       </div>

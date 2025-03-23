@@ -43,7 +43,17 @@ export const offerData: LeaderboardEntry[] = [
 export const promotionBanners: Banner[] = [
   {
     id: 1,
-    imageUrl: "/lovable-uploads/c0006672-e7a1-4157-850f-411a090706a3.png",
+    imageUrl: "/lovable-uploads/f6a030bc-b722-408b-a321-9691ff13de3f.png",
     title: "开门红奖励",
+  },
+  {
+    id: 2,
+    imageUrl: "/lovable-uploads/f6a030bc-b722-408b-a321-9691ff13de3f.png",
+    title: "推荐直播报告",
+  },
+  {
+    id: 3,
+    imageUrl: "/lovable-uploads/f6a030bc-b722-408b-a321-9691ff13de3f.png",
+    title: "简历优化技巧",
   },
 ];
