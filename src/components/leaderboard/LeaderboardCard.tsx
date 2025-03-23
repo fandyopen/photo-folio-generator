@@ -1,9 +1,30 @@
 
-import React from 'react';
+import React, { useState } from 'react';
 import { cn } from '@/lib/utils';
-import { Crown } from 'lucide-react';
+import { ChevronLeft, ChevronRight, Crown } from 'lucide-react';
 
-const LeaderboardCard = ({ title, entries, valueLabel, onTabChange, activeTab = 'month' }) => {
+interface LeaderboardEntry {
+  rank: number;
+  name: string;
+  value: number;
+  isTop?: boolean;
+}
+
+interface LeaderboardCardProps {
+  title: string;
+  entries: LeaderboardEntry[];
+  valueLabel: string;
+  onTabChange?: (tab: 'month' | 'week') => void;
+  activeTab?: 'month' | 'week';
+}
+
+const LeaderboardCard: React.FC<LeaderboardCardProps> = ({ 
+  title, 
+  entries, 
+  valueLabel,
+  onTabChange,
+  activeTab = 'month'
+}) => {
   return (
     <div className="bg-white rounded-lg shadow-md card-shadow animate-fade-up overflow-hidden">
       <div className="p-4 border-b border-gray-100">

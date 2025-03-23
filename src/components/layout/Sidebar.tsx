@@ -1,5 +1,5 @@
 
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { 
   BarChart, Users, Target, User, Briefcase, FileText, Settings, Menu, Image,
@@ -7,7 +7,12 @@ import {
 } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
-const Sidebar = ({ collapsed = false, onToggle }) => {
+interface SidebarProps {
+  collapsed?: boolean;
+  onToggle?: () => void;
+}
+
+const Sidebar: React.FC<SidebarProps> = ({ collapsed = false, onToggle }) => {
   const location = useLocation();
   
   return (
@@ -108,7 +113,15 @@ const Sidebar = ({ collapsed = false, onToggle }) => {
   );
 };
 
-const SidebarItem = ({ 
+interface SidebarItemProps {
+  icon: React.ReactNode;
+  label: string;
+  to: string;
+  collapsed?: boolean;
+  active?: boolean;
+}
+
+const SidebarItem: React.FC<SidebarItemProps> = ({ 
   icon, 
   label, 
   to, 

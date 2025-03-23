@@ -4,7 +4,11 @@ import Sidebar from './Sidebar';
 import Header from './Header';
 import { cn } from '@/lib/utils';
 
-const Layout = ({ children }) => {
+interface LayoutProps {
+  children: React.ReactNode;
+}
+
+const Layout: React.FC<LayoutProps> = ({ children }) => {
   const [sidebarCollapsed, setSidebarCollapsed] = useState(false);
   
   return (

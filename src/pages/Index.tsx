@@ -4,11 +4,12 @@ import Layout from '@/components/layout/Layout';
 import LeaderboardCard from '@/components/leaderboard/LeaderboardCard';
 import PromotionBanner from '@/components/leaderboard/PromotionBanner';
 import { hiringData, interviewData, offerData, promotionBanners } from '@/data/leaderboardData';
+import { TimeFrame } from '@/types';
 
 const Index = () => {
-  const [hiringTimeFrame, setHiringTimeFrame] = useState('month');
-  const [interviewTimeFrame, setInterviewTimeFrame] = useState('month');
-  const [offerTimeFrame, setOfferTimeFrame] = useState('month');
+  const [hiringTimeFrame, setHiringTimeFrame] = useState<TimeFrame>('month');
+  const [interviewTimeFrame, setInterviewTimeFrame] = useState<TimeFrame>('month');
+  const [offerTimeFrame, setOfferTimeFrame] = useState<TimeFrame>('month');
   
   return (
     <Layout>

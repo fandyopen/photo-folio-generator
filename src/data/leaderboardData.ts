@@ -1,5 +1,7 @@
 
-export const hiringData = [
+import { LeaderboardEntry, Banner } from '../types';
+
+export const hiringData: LeaderboardEntry[] = [
   { rank: 1, name: "陈**", value: 24, isTop: true },
   { rank: 2, name: "王**", value: 19, isTop: true },
   { rank: 3, name: "刘**", value: 18, isTop: true },
@@ -12,7 +14,7 @@ export const hiringData = [
   { rank: 10, name: "段**", value: 10 },
 ];
 
-export const interviewData = [
+export const interviewData: LeaderboardEntry[] = [
   { rank: 1, name: "陈**", value: 382, isTop: true },
   { rank: 2, name: "蒋**", value: 333, isTop: true },
   { rank: 3, name: "杨**", value: 305, isTop: true },
@@ -25,7 +27,7 @@ export const interviewData = [
   { rank: 10, name: "周**", value: 212 },
 ];
 
-export const offerData = [
+export const offerData: LeaderboardEntry[] = [
   { rank: 1, name: "陈**", value: 49, isTop: true },
   { rank: 2, name: "蒋**", value: 45, isTop: true },
   { rank: 3, name: "张**", value: 31, isTop: true },
@@ -38,10 +40,10 @@ export const offerData = [
   { rank: 10, name: "肖**", value: 17 },
 ];
 
-export const promotionBanners = [
+export const promotionBanners: Banner[] = [
   {
     id: 1,
-    imageUrl: "/lovable-uploads/f6a030bc-b722-408b-a321-9691ff13de3f.png",
+    imageUrl: "/lovable-uploads/f6345838-d45a-4760-bcba-b93cef629843.png",
     title: "开门红奖励",
   },
   {
