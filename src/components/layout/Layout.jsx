@@ -7,6 +7,8 @@ import { cn } from '@/lib/utils';
 const Layout = ({ children }) => {
   const [sidebarCollapsed, setSidebarCollapsed] = useState(false);
   
+  console.log("Layout rendering with children:", children);
+  
   return (
     <div className="min-h-screen bg-[#f0f5fc]">
       <Sidebar 

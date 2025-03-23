@@ -1,4 +1,5 @@
 
+import React from "react";
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -18,28 +19,31 @@ import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
 
-const App = () => (
-  <QueryClientProvider client={queryClient}>
-    <TooltipProvider>
-      <Toaster />
-      <Sonner />
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Index />} />
-          <Route path="/dashboard" element={<Dashboard />} />
-          <Route path="/image-upload" element={<ImageUpload />} />
-          <Route path="/my-orders" element={<MyOrders />} />
-          <Route path="/my-position" element={<MyPosition />} />
-          <Route path="/personnel" element={<Personnel />} />
-          <Route path="/resumes" element={<Resumes />} />
-          <Route path="/resumes/:id" element={<ResumeDetail />} />
-          <Route path="/recommendations" element={<Recommendations />} />
-          <Route path="/data" element={<DataManagement />} />
-          <Route path="*" element={<NotFound />} />
-        </Routes>
-      </BrowserRouter>
-    </TooltipProvider>
-  </QueryClientProvider>
-);
+const App = () => {
+  console.log("App component rendering");
+  return (
+    <QueryClientProvider client={queryClient}>
+      <TooltipProvider>
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<Index />} />
+            <Route path="/dashboard" element={<Dashboard />} />
+            <Route path="/image-upload" element={<ImageUpload />} />
+            <Route path="/my-orders" element={<MyOrders />} />
+            <Route path="/my-position" element={<MyPosition />} />
+            <Route path="/personnel" element={<Personnel />} />
+            <Route path="/resumes" element={<Resumes />} />
+            <Route path="/resumes/:id" element={<ResumeDetail />} />
+            <Route path="/recommendations" element={<Recommendations />} />
+            <Route path="/data" element={<DataManagement />} />
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+        </BrowserRouter>
+        <Toaster />
+        <Sonner />
+      </TooltipProvider>
+    </QueryClientProvider>
+  );
+};
 
 export default App;

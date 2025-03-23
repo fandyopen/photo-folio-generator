@@ -9,6 +9,7 @@ import { cn } from '@/lib/utils';
 
 const Sidebar = ({ collapsed = false, onToggle }) => {
   const location = useLocation();
+  console.log("Current location:", location.pathname);
   
   return (
     <div className={cn(

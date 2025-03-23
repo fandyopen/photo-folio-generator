@@ -20,4 +20,8 @@ export default defineConfig(({ mode }) => ({
       "@": path.resolve(__dirname, "./src"),
     },
   },
+  esbuild: {
+    jsx: 'automatic',
+    jsxInject: `import React from 'react'`
+  }
 }));

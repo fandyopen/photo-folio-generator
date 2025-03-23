@@ -1,5 +1,5 @@
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Layout from '@/components/layout/Layout';
 import LeaderboardCard from '@/components/leaderboard/LeaderboardCard';
 import PromotionBanner from '@/components/leaderboard/PromotionBanner';
@@ -9,6 +9,10 @@ const Index = () => {
   const [hiringTimeFrame, setHiringTimeFrame] = useState('month');
   const [interviewTimeFrame, setInterviewTimeFrame] = useState('month');
   const [offerTimeFrame, setOfferTimeFrame] = useState('month');
+  
+  useEffect(() => {
+    console.log("Index component mounted");
+  }, []);
   
   return (
     <Layout>
