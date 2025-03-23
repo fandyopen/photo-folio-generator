@@ -2,7 +2,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { 
-  BarChart, Users, Target, User, Briefcase, FileText, Settings, Menu
+  BarChart, Users, Target, User, Briefcase, FileText, Settings, Menu, Image
 } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
@@ -41,7 +41,12 @@ const Sidebar = ({ collapsed = false, onToggle }) => {
             label="排行榜" 
             to="/" 
             collapsed={collapsed} 
-            active
+          />
+          <SidebarItem 
+            icon={<Image size={18} />} 
+            label="图片上传" 
+            to="/image-upload" 
+            collapsed={collapsed} 
           />
           <SidebarItem 
             icon={<Target size={18} />} 
