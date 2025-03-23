@@ -3,7 +3,13 @@ import React from 'react';
 import { cn } from '@/lib/utils';
 import { Crown } from 'lucide-react';
 
-const LeaderboardCard = ({ title, entries, valueLabel, onTabChange, activeTab = 'month' }) => {
+const LeaderboardCard = ({ 
+  title, 
+  entries, 
+  valueLabel,
+  onTabChange,
+  activeTab = 'month'
+}) => {
   return (
     <div className="bg-white rounded-lg shadow-md card-shadow animate-fade-up overflow-hidden">
       <div className="p-4 border-b border-gray-100">
